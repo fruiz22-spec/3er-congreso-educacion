@@ -421,9 +421,30 @@ footer p {
         height: 700px;
     }
 }
+/* ===== FORZAR VISOR DE PDFs GRANDE ===== */
+
+#documentos {
+    width: 100%;
+}
+
+#documentos .pdf-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#documentos .pdf-container iframe {
+    width: 100% !important;
+    height: 1000px !important;
+    border: 2px solid #0056b3;
+    border-radius: 12px;
+}
 
 
 }
+
 
 
 
