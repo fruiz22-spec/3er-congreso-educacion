@@ -361,72 +361,41 @@ footer p {
     visibility: visible;
 }
 
-/* ===== SECCIÓN DOCUMENTOS PDF ===== */
+/* ===== PDFs GRANDES Y BIEN ALINEADOS ===== */
 
 #documentos {
   width: 100%;
-  background-color: #f7f7f7;
   padding: 3rem 1rem;
 }
 
-#documentos .pdf-container {
+.pdf-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-#documentos .pdf-container iframe {
+.pdf-container iframe {
   width: 100%;
-  height: 85vh;
-  border: 3px solid #0056b3;
+  height: 70vh; /* 🔥 CLAVE */
+  border: 3px solid #0056A6;
   border-radius: 12px;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-  #documentos .pdf-container {
+  .pdf-container {
     grid-template-columns: 1fr;
   }
 
-  #documentos .pdf-container iframe {
-    height: 70vh;
-  }
-}
-/* ===== SECCIÓN DOCUMENTOS PDF (AJUSTE FINAL) ===== */
-
-#documentos {
-  width: 100%;
-  background-color: #f7f7f7;
-  padding: 2rem 1rem;
-}
-
-#documentos .pdf-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* DOS COLUMNAS */
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 1400px; /* controla el ancho total */
-  margin: 0 auto;
-}
-
-#documentos .pdf-container iframe {
-  width: 100%;
-  height: 65vh; /* 👈 CLAVE: ya no tan altos */
-  border: 2px solid #0056b3;
-  border-radius: 10px;
-}
-@media (max-width: 900px) {
-  #documentos .pdf-container {
-    grid-template-columns: 1fr;
-  }
-
-  #documentos .pdf-container iframe {
-    height: 70vh;
+  .pdf-container iframe {
+    height: 75vh;
   }
 }
 
 }
+
 
 
 
