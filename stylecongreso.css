@@ -435,8 +435,34 @@ footer p {
 .pdf-button.secondary:hover {
   background-color: #545b62;
 }
-
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media (max-width: 1024px) {
+  .pdf-card iframe {
+    height: 550px;
+  }
 }
+
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+@media (max-width: 768px) {
+  .pdf-container {
+    flex-direction: column;
+  }
+
+  .pdf-card iframe {
+    height: 70vh;
+  }
+
+  .pdf-button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+}
+
 
 
 
