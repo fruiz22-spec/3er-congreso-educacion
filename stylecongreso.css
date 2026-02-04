@@ -501,8 +501,20 @@ footer p {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 768px) {
+
+  html {
+    font-size: 90%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 
 }
+
+}
+
 
 
 
