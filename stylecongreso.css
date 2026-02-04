@@ -445,23 +445,22 @@ footer p {
 }
 
 /* =========================
-   RESPONSIVE CELULAR
+   FIX CONTENEDOR EN MÓVIL
 ========================= */
 @media (max-width: 768px) {
-  .pdf-container {
-    flex-direction: column;
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 16px; /* respiración lateral */
   }
 
-  .pdf-card iframe {
-    height: 70vh;
-  }
-
-  .pdf-button {
-    width: 100%;
-    font-size: 1.1rem;
+  body {
+    background-color: #ffffff;
   }
 }
 }
+
 
 
 
